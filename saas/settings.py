@@ -118,7 +118,14 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # 自己短信模板
-SMS = 0
+# 腾讯云短信应用的app_id
+TENCENT_SMS_APP_ID = 1212121212
+
+# 腾讯云短信应用的app_key
+TENCENT_SMS_APP_KEY = "6666666666666666666666"
+
+# 腾讯云短信签名内容
+TENCENT_SMS_SIGN = "Python之路"
 
 try:
     from .local_settings import *
